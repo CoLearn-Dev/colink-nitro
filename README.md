@@ -54,7 +54,7 @@ socat -V
   nitro-cli describe-enclaves
   ```
 
-  ### Connect to the enclave locally
+### Connect to the enclave locally
 * The enclave's http traffic is forwarded to vsock 5000 by default using socat. To convert it back into http, we must create a socat listener on the host that forwards connections through the vsock
 
   ```
