@@ -41,7 +41,7 @@ A proof of concept for running a Colink server in an [AWS Nitro Enclave](https:/
 * Download the colink.eif file from the releases tab, or build it yourself using the instructions below (TODO)
 
   ```
-  TODO
+  wget https://github.com/Robit/colink-docker/releases/download/v0.0.1-beta/colink.eif
   ```
 * Run the enclave file using the following command
 
