@@ -13,11 +13,11 @@ A proof of concept for running a Colink server in an [AWS Nitro Enclave](https:/
 
 * The required prerequisites to run the enclave container can be installed and configured using
 
-```
-sudo amazon-linux-extras install aws-nitro-enclaves-cli -y
-sudo usermod -aG ne ec2-user
-sudo usermod -aG docker ec2-user
-```
+  ```
+  sudo amazon-linux-extras install aws-nitro-enclaves-cli -y
+  sudo usermod -aG ne ec2-user
+  sudo usermod -aG docker ec2-user
+  ```
 
 * Log out and log back in for the changes to take effect
   ````
@@ -26,15 +26,15 @@ sudo usermod -aG docker ec2-user
   ````
 * The demo currently uses a version of socat newer than the ones provided by Amazon Linux. As such, the following lines install the prerequisites for building socat from source
 
-```
-sudo yum install gcc -y
-wget http://www.dest-unreach.org/socat/download/socat-1.7.4.4.tar.gz
-tar -xf socat-1.7.4.4.tar.gz
-cd socat
-./configure
-sudo make install
-socat -V
-```
+  ```
+  sudo yum install gcc -y
+  wget http://www.dest-unreach.org/socat/download/socat-1.7.4.4.tar.gz
+  tar -xf socat-1.7.4.4.tar.gz
+  cd socat
+  ./configure
+  sudo make install
+  socat -V
+  ```
 
 ### Run the enclave
 
